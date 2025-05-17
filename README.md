@@ -1,0 +1,1 @@
+# Filtro-Wiener-e-Ru-do-Gaussiano-branco
