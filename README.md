@@ -29,7 +29,7 @@ No caso de imagens RGB, a fórmula se aplica separadamente aos canais R, G e B.
     </td>
     <td align="center">
       <img src="imagens/teste_gaussiano.png" width="auto" height="auto"><br>
-      <sub>Imagem com ruído (desvio padrão 30 para cada canal de cor)</sub>
+      <sub>Imagem com ruído (desvio padrão 20 para cada canal de cor)</sub>
     </td>
   </tr>
 </table>
@@ -102,7 +102,7 @@ void applyGaussianNoise(SDL_Surface *surface, float media, float desvio) {
     </td>
     <td align="center">
       <img src="imagens/teste_gaussiano.png" width="auto" height="auto"><br>
-      <sub>Imagem com ruído (desvio padrão 30 para cada canal de cor e media zero)</sub>
+      <sub>Imagem com ruído (desvio padrão 20 para cada canal de cor e media zero)</sub>
     </td>
   </tr>
 </table>
@@ -134,7 +134,7 @@ No caso de imagens RGB, como é o contexto deste trabalho, o filtro é aplicado 
   <tr>
     <td align="center">
       <img src="imagens/teste_gaussiano.png" width="auto" height="auto"><br>
-      <sub>Imagem com ruído (desvio padrão 30 para cada canal de cor)</sub>
+      <sub>Imagem com ruído (desvio padrão 20 para cada canal de cor)</sub>
     </td>
     <td align="center">
       <img src="imagens/teste_wiener.png" width="auto" height="auto"><br>
@@ -234,11 +234,11 @@ void applyWienerFilterRGB(SDL_Surface *surface, float noiseVariance) {
   <tr>
     <td align="center">
       <img src="imagens/teste_gaussiano.png" width="auto" height="auto"><br>
-      <sub>Imagem com ruído (desvio padrão 30 para cada canal de cor e media zero)</sub>
+      <sub>Imagem com ruído (desvio padrão 20 para cada canal de cor e media zero)</sub>
     </td>
     <td align="center">
       <img src="imagens/teste_wiener.png" width="auto" height="auto"><br>
-      <sub>Imagem filtrada (area do filtro de 25 pixels)</sub>
+      <sub>Imagem filtrada (area do filtro de 5 pixels)</sub>
     </td>
   </tr>
 </table>
@@ -253,11 +253,11 @@ void applyWienerFilterRGB(SDL_Surface *surface, float noiseVariance) {
     </td>
     <td align="center">
       <img src="imagens/teste_gaussiano.png" style="max-width: 100%; height: auto;" width="300"><br>
-      <sub>Imagem com ruído (desvio padrão 30 para cada canal de cor)</sub>
+      <sub>Imagem com ruído (desvio padrão 20 para cada canal de cor)</sub>
     </td>
     <td align="center">
       <img src="imagens/teste_wiener.png" style="max-width: 100%; height: auto;" width="300"><br>
-      <sub>Imagem filtrada (area do filtro de 25 pixels)</sub>
+      <sub>Imagem filtrada (area do filtro de 5 pixels)</sub>
     </td>
   </tr>
 </table>
