@@ -238,7 +238,7 @@ void applyWienerFilterRGB(SDL_Surface *surface, float noiseVariance) {
     </td>
     <td align="center">
       <img src="imagens/teste_wiener.png" width="auto" height="auto"><br>
-      <sub>Imagem filtrada (area do filtro de 25</sub>
+      <sub>Imagem filtrada (area do filtro de 25 pixels)</sub>
     </td>
   </tr>
 </table>
@@ -257,7 +257,7 @@ void applyWienerFilterRGB(SDL_Surface *surface, float noiseVariance) {
     </td>
     <td align="center">
       <img src="imagens/teste_wiener.png" style="max-width: 100%; height: auto;" width="300"><br>
-      <sub>Imagem filtrada</sub>
+      <sub>Imagem filtrada (area do filtro de 25 pixels)</sub>
     </td>
   </tr>
 </table>
