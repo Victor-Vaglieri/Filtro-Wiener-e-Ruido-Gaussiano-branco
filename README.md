@@ -117,9 +117,9 @@ O filtro de Wiener trabalha localmente, isto é, calcula estatísticas (média e
 $Î(x,y) = μ+((σ^2σ_n^2)/σ^2)*(I_r(x,y)-μ)$
 
 Onde:
-+ μ é a média local da vizinhança;
-+ $σ^2# é a variância local;
-+ $σ_n^2 é a variância estimada do ruído (normalmente fornecida como parâmetro);
++ $μ$ é a média local da vizinhança;
++ $σ^2$ é a variância local;
++ $σ_n^2$ é a variância estimada do ruído (normalmente fornecida como parâmetro);
 + $I_r(x,y)$ é o valor do pixel observado com ruído.
 
 Essa fórmula permite que o filtro atue de maneira adaptativa: quando a variância local é alta, indicando detalhes ou bordas, o filtro preserva melhor o contraste local; quando a variância é baixa, indicando áreas homogêneas, o filtro atua de forma mais agressiva para suavizar o ruído (GONZALEZ; WOODS, 2010).
