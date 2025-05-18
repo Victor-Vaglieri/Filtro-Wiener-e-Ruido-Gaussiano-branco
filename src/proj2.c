@@ -22,9 +22,9 @@
 
 
 // ----------------------------------------------------------------------------------------------------------------------------------------------
-static const char *CAMINHO_IMAGEM = "C:/teste/WS/imagens/passaro.png";
-static const char *CAMINHO_WIENER = "C:/teste/WS/imagens/teste_wiener.png";
-static const char *CAMINHO_GAUSSIANO = "C:/teste/WS/imagens/teste_gaussiano.png";
+static const char *CAMINHO_IMAGEM = "imagens/passaro.png";
+static const char *CAMINHO_WIENER = "imagens/teste_wiener.png";
+static const char *CAMINHO_GAUSSIANO = "imagens/teste_gaussiano.png";
 static const float RUIDO = 10.0f; // desvio padrao do ruido gaussiano
 static const float MEDIA = 0.0f; // media do ruido gaussiano
 static const float FILTRO = RUIDO*RUIDO; // variancia do filtro de wiener
@@ -152,15 +152,13 @@ void applyWienerFilterRGB(SDL_Surface *surface, float noiseVariance) {
 }
 
 
-const char *WINDOW_TITLE = "Ruido Gaussiano e Filtro de Wiener";
+const char *WINDOW_TITLE = "(1) imagem original | (2) Ruido Gaussiano | (3) Filtro de Wiener";
 enum constants
 {
     WINDOW_WIDTH = 600,
     WINDOW_HEIGHT = 200,
     WINDOW_TITLE_MAX_LENGTH = 64,
 };
-
-
 
 // função que libera a memória alocada e encerra o SDL
 static void shutdown(void)
