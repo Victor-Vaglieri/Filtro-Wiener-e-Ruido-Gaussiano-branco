@@ -333,7 +333,7 @@ void applyWienerFilterRGB(SDL_Surface *surface, float noiseVariance) {
 </table>
 
 ### Histogramas
-na imagem abaixo é possivel ver que os histogramas RGB mostram claramente os efeitos do ruído gaussiano branco e a eficácia do filtro de Wiener na restauração da imagem. Na imagem original, os picos de intensidade são bem definidos, indicando uma distribuição específica das cores em cada canal. Após a adição do ruído, os histogramas se tornam mais espalhados e suaves, refletindo a aleatoriedade do ruído branco gaussiano. Já nos histogramas da imagem filtrada, é possível observar uma reconstrução das formas originais, com redução da dispersão e recuperação parcial das características iniciais. Embora não haja recuperação total, o filtro suaviza significativamente os efeitos do ruído, preservando os contornos principais dos histogramas originais.
+na imagem abaixo é possivel ver que os histogramas RGB mostram os efeitos do ruído gaussiano branco e a eficácia do filtro de Wiener na restauração da imagem. Na imagem original, os picos de intensidade são bem mais definidos, indicando uma distribuição específica das cores em cada canal. Após a adição do ruído, os histogramas se tornam mais espalhados, refletindo a aleatoriedade do ruído branco gaussiano. Já nos histogramas da imagem filtrada, é possível observar uma reconstrução das formas originais, com redução da dispersão e recuperação parcial das características iniciais. Embora não haja recuperação total, o filtro suaviza os efeitos do ruído, preservando os contornos dos histogramas originais.
 
 <p align="center">
   <img src="imagens/histogramas.png" width="auto" height="auto"><br>
@@ -342,7 +342,7 @@ na imagem abaixo é possivel ver que os histogramas RGB mostram claramente os ef
 
 
 ### Graficos com as intensidades dos Pixels em uma Linha
-Os gráficos de intensidade de pixel ao longo de uma linha evidenciam o comportamento do ruído e da filtragem. Na imagem original, os canais vermelho, verde e azul seguem padrões bem definidos, com transições nítidas entre regiões de diferentes intensidades. Com a adição do ruído, há flutuações aleatórias significativas nos três canais, tornando o sinal menos legível e mais instável. Após a aplicação do filtro de Wiener, observa-se uma atenuação das oscilações, com uma curva mais próxima da original.
+Os gráficos de intensidade de pixel ao longo de uma linha evidenciam o comportamento do ruído e da filtragem. Na imagem original, os canais vermelho, verde e azul seguem padrões de como deve ser, com transições nítidas entre regiões de diferentes intensidades. Com a adição do ruído, há grandes flutuações aleatórias nos três canais, tornando o sinal menos legível e mais instável. Após a aplicação do filtro de Wiener, observa-se uma atenuação das oscilações, com uma curva mais próxima da original.
 
 <p align="center">
   <img src="imagens/linha.png" width="auto" height="auto"><br>
