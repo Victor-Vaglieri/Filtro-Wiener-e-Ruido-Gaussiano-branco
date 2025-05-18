@@ -58,7 +58,7 @@ gcc src/proj2.c -o src/proj2 -Ic:/visual/Filtro-Wiener-e-Ruido-Gaussiano-branco/
 
 4. utilize o comando
 ```
-.\src\proj
+.\src\proj2
 ```
 
 ---
