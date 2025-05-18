@@ -13,7 +13,9 @@ git clone https://github.com/Victor-Vaglieri/Filtro-Wiener-e-Ruido-Gaussiano-bra
 ```
 
 baixe o arquivo da versão 3.2.14 chamado **SDL3-devel-3.2.14-mingw.zip** no diretorio [SDL releases](https://github.com/libsdl-org/SDL/releases)
+
 baixe o arquivo da versão 3.2.14 chamado **SDL3_image-devel-3.2.4-mingw.zip** no diretorio [SDL_image releases](https://github.com/libsdl-org/SDL_image/releases)
+
 mova os dois arquivos para o diretorio **Filtro-Wiener-e-Ruido-Gaussiano-branco**
 
 1. abra o terminal (CMD) neste diretório e digite:
