@@ -25,7 +25,7 @@
 static const char *CAMINHO_IMAGEM = "imagens/passaro.png";
 static const char *CAMINHO_WIENER = "imagens/teste_wiener.png";
 static const char *CAMINHO_GAUSSIANO = "imagens/teste_gaussiano.png";
-static const float RUIDO = 10.0f; // desvio padrao do ruido gaussiano
+static const float RUIDO = 20.0f; // desvio padrao do ruido gaussiano
 static const float MEDIA = 0.0f; // media do ruido gaussiano
 static const float FILTRO = RUIDO*RUIDO; // variancia do filtro de wiener
 static const int AREA_FILTRO = 5; // area do filtro de mediana (deve ser impar)
