@@ -3,6 +3,65 @@
 Este repositório contém um tutorial prático e teórico sobre a aplicação de ruído branco gaussiano a imagens e sua posterior remoção utilizando o Filtro de Wiener.
 
 ---
+
+## Preparação do ambiente
+
+```
+git clone https://github.com/Victor-Vaglieri/Filtro-Wiener-e-Ruido-Gaussiano-branco.git
+```
+
+baixe o arquivo da versão 3.2.14 chamado **SDL3-devel-3.2.14-mingw.zip** no diretorio [SDL releases](https://github.com/libsdl-org/SDL/releases)
+baixe o arquivo da versão 3.2.14 chamado **SDL3_image-devel-3.2.4-mingw.zip** no diretorio [SDL_image releases](https://github.com/libsdl-org/SDL_image/releases)
+mova os dois arquivos para o diretorio **Filtro-Wiener-e-Ruido-Gaussiano-branco**
+
+1. abra o terminal (CMD) neste diretório e digite:
+
+```
+tar -xf .\SDL3-devel-3.2.14-mingw.zip
+tar -xf .\SDL3_image-devel-3.2.4-mingw.zip
+rm .\SDL3-devel-3.2.14-mingw.zip
+rm .\SDL3_image-devel-3.2.4-mingw.zip
+```
+
+2. para sistemas de arquitetura 64-bit
+
+```
+copy .\SDL3-3.2.14\x86_64-w64-mingw32\bin\SDL3.dll .\src\
+copy .\SDL3_image-3.2.4\x86_64-w64-mingw32\bin\SDL3_image.dll .\src\
+copy .\SDL3_image-3.2.4\x86_64-w64-mingw32\include\SDL3_image\ .\SDL3-3.2.14\x86_64-w64-mingw32\include\ -Recurse
+copy .\SDL3_image-3.2.4\x86_64-w64-mingw32\lib\* .\SDL3-3.2.14\x86_64-w64-mingw32\lib -force
+```
+
+2.  para sistemas de arquitetura 32-bit
+
+```
+copy .\SDL3-3.2.14\i686-w64-mingw32\bin\SDL3.dll .\src\
+copy .\SDL3_image-3.2.4\i686-w64-mingw32\bin\SDL3_image.dll .\src\
+copy .\SDL3_image-3.2.4\i686-w64-mingw32\include\SDL3_image\ .\SDL3-3.2.14\i686-w64-mingw32\include\ -Recurse
+copy .\SDL3_image-3.2.4\i686-w64-mingw32\lib\* .\SDL3-devel-3.2.14-mingw\SDL3-3.2.14\i686-w64-mingw32\lib -force
+```
+
+### Compilação
+
+
+3. para sistemas de arquitetura 64-bit
+```
+gcc src/proj2.c -o src/proj2 -Ic:/visual/Filtro-Wiener-e-Ruido-Gaussiano-branco/SDL3-3.2.14/x86_64-w64-mingw32/include -Lc:/visual/Filtro-Wiener-e-Ruido-Gaussiano-branco/SDL3-3.2.14/x86_64-w64-mingw32/lib -lSDL3 -lSDL3_image
+```
+
+3. para sistemas de arquitetura 32-bit
+```
+gcc src/proj2.c -o src/proj2 -Ic:/visual/Filtro-Wiener-e-Ruido-Gaussiano-branco/SDL3-devel-3.2.14-mingw/SDL3-3.2.14/i686-w64-mingw32/include -Lc:/visual/Filtro-Wiener-e-Ruido-Gaussiano-branco/SDL3-devel-3.2.14-mingw/SDL3-3.2.14/i686-w64-mingw32/lib -lSDL3 -lSDL3_image
+```
+
+### Execução
+
+4. utilize o comando
+```
+.\src\proj
+```
+
+
 ## Ruído Branco Gaussiano
 O ruído branco gaussiano aditivo (AWGN) é um modelo probabilístico amplamente utilizado em sistemas de comunicação e processamento de imagens digitais. Ele é chamado de "branco" porque apresenta distribuição espectral plana, ou seja, sua energia é distribuída igualmente entre todas as frequências (GONZALEZ; WOODS, 2010). É dito "gaussiano" porque os valores de intensidade do ruído seguem uma distribuição normal (curva de Gauss), caracterizada por uma média ($μ$) e e uma variância ($σ^2$).
 
@@ -243,6 +302,7 @@ void applyWienerFilterRGB(SDL_Surface *surface, float noiseVariance) {
   </tr>
 </table>
 
+---
 
 ## Comparação das imagens geradas
 <table>
