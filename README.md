@@ -61,6 +61,7 @@ gcc src/proj2.c -o src/proj2 -Ic:/visual/Filtro-Wiener-e-Ruido-Gaussiano-branco/
 .\src\proj
 ```
 
+---
 
 ## Ruído Branco Gaussiano
 O ruído branco gaussiano aditivo (AWGN) é um modelo probabilístico amplamente utilizado em sistemas de comunicação e processamento de imagens digitais. Ele é chamado de "branco" porque apresenta distribuição espectral plana, ou seja, sua energia é distribuída igualmente entre todas as frequências (GONZALEZ; WOODS, 2010). É dito "gaussiano" porque os valores de intensidade do ruído seguem uma distribuição normal (curva de Gauss), caracterizada por uma média ($μ$) e e uma variância ($σ^2$).
