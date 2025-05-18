@@ -45,6 +45,7 @@ copy .\SDL3_image-3.2.4\i686-w64-mingw32\lib\* .\SDL3-devel-3.2.14-mingw\SDL3-3.
 
 > [!WARNING] 
 > para que seja possivel o funcionamento se deve ter o minGW
+>
 > caso não tenha é indicado seguir o passo a passo do site [MYSY2](https://www.msys2.org/)
 
 ### Compilação
